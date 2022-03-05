@@ -22,7 +22,7 @@ By me
 
 
 {% block content %}
-
-<p>Hello World</p>
-
-{% endblock content %}
+{% for obj in harvard_park_homicides %}
+    {{ obj.first_name }} {{ obj.last_name }}<br>
+{% endfor %}
+{% endblock %}
